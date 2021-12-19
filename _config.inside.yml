@@ -179,10 +179,10 @@ page:
   # toc: false
 
   # Display reward, default to `false`
-  # reward: true
+  reward: true
 
   # Display copyright notice, default to `false`
-  # copyright: true
+  copyright: true
 
 # Post
 post:
@@ -194,8 +194,8 @@ post:
 
   # The following settings are the same as the page
   # toc: false
-  # reward: true
-  # copyright: true
+  reward: true
+  copyright: true
 
 # Archive
 archive:
@@ -278,37 +278,36 @@ toc:
 # Reward
 reward:
   # Text which shows at the top.
-  # text: Buy me a cup of coffee ☕.
+  text: 如果对你有帮助的话，不如请我喝杯咖啡吧 ☕.
 
   # Payment Methods
   # qrcode, url and text must be set at least one
   # wechat, alipay, paypal and bitcoin has a built-in icon,
   # use `name` to apply
-  # methods:
-  #   - name: paypal
-  #     qrcode: paypal.jpg
-  #     url: https://paypal.me/imelmore
-  #     text: This is a paypal payment link
-  #     color: '#09bb07'
+  methods:
+    - name: wechat
+      qrcode: /images/wechat.jpg
+      color: "#09bb07"
+    - name: alipay
+      qrcode: /images/alipay.png
+      color: "#1775FD"
 
 # Copyright notice
 # It is possible to use front matter `copyright` to override this setting.
 copyright:
   # Display author, default to `true`
-  # author: true
+  author: true
 
   # Display link, default to `true`
-  # link: false
+  link: true
 
-  # license: Attribution-NonCommercial-NoDerivatives 4.0 International
-  #   (<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"
-  #   rel=\"external nofollow\" target=\"_blank\">CC BY-NC-ND 4.0</a>)
+  license: 转载请注明出处~
 
   # Display published date, default to `false`
-  # published: false
+  published: true
 
   # Display updated date, default to `false`
-  # updated: false
+  updated: true
 
   # Custom text, override above settings
   # custom: my copyright
